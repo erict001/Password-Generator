@@ -43,20 +43,23 @@ console.log(letterNumbers);
 // Get random index from array of options (symbols)
 var indexSymbols = Math.floor(Math.random() * symbols.length);
 var letterSymbols = symbols[indexSymbols];
-console.log(letterUpper);
+console.log(letterSymbols);
 
 
 // Based on choices, password criteria is chosen
 if (userResponse = "lowercase") { 
-     console.log("");
+     for (let i = 0; i < lower.length; i++)
+     console.log(i) ;
 } else if (userResponse = "uppercase") {
-     console.log("ucase");
+     for (let i = 0; i < upper.length; i++)
+     console.log(i);
 } else if (userResponse = "numbers") {
-     console.log("numbers");
+     for (let i = 0; i < numbers.length; i++)
+     console.log(i);
 } else if (userResponse = "symbols") {
-     console.log("symbols");
-
-
+     for (let i = 0; i < symbols.length; i++)
+     console.log(i);
+}
 
 
 
