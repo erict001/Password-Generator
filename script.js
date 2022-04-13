@@ -22,6 +22,12 @@ function generatePassword(){
 
      //ask user for password criteria
      var passwordLength = prompt("Choose password length between 8 and 128");
+
+     if (passwordLength < 8 || passwordLength > 128) {
+          alert("Password must be between 8 and 128 characters.");
+          return "Your secure password";
+        }
+        else {
      
      var responseLower = confirm("Would you like to use lowercase letters for your password?");
      var responseUpper = confirm("Would you like to use uppercase letters for your password?");
@@ -55,7 +61,7 @@ function generatePassword(){
 
      // return emptyString.join("").toString();
 
-     
+};  
 };
 
 // Assignment Code, DO NOT EDIT ANTHING  BELOW THIS LINE
